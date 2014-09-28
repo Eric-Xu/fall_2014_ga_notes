@@ -1,0 +1,9 @@
+
+The dependent (or output) variable is the price of the house that we're trying to predict.
+The predictor (or input) variable is the variable used to guide our prediction.
+The p-value for each term tests the null hypothesis that the coefficient is equal to zero (no effect). A low p-value (< 0.05) indicates that you can reject the null hypothesis. Conversely, a larger (insignificant) p-value suggests that changes in the predictor are not associated with changes in the response.
+Multivariate regression analysis is when multiple independent variables are hypothesized to be associated with a single dependent variable.
+Multicollinearity (also collinearity) is a statistical phenomenon in which two or more predictor variables in a multiple regression model are highly correlated, meaning that one can be linearly predicted from the others with a non-trivial degree of accuracy.
+
+How to use Pairwise and Partial Correlations to simplify a multivariate regression:
+  http://www.jmp.com/academic/pdf/cases/12HousingPrices.pdf
