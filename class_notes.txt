@@ -7,3 +7,28 @@ Multicollinearity (also collinearity) is a statistical phenomenon in which two o
 
 How to use Pairwise and Partial Correlations to simplify a multivariate regression:
   http://www.jmp.com/academic/pdf/cases/12HousingPrices.pdf
+
+Sep 29:
+  Agenda
+    - intro to machine learning
+    - intro to python tools
+
+  - supervised algorithm is making predictions; clear understanding of problem at hand
+    - dependent variables; predictor variable
+    - can be categorized as regression, classification, and sometimes clustering
+    - examples include spam filtering; character recognition
+    - document clustering can be either or; evergreen means only certain file types are allowed
+  - unsupervised learning is
+    - trying to find hidden structure in unlabeled data
+    - no outcome variable, just a collection of inputs; hard to tell if you are doing well
+    - the most common unsupervised learning method is cluster analysis
+      - Hierarchical clustering; k-Means clustering; self-organizing maps; hidden Markov models
+    - used in bioinformatics for sequence analysis and genetic clustering; in medical imaging for image segmentation; and in computer vision for object recognition.
+  - Rob recommends "Python for Data Analysis" for learning about pandas; a bit out dated
+  - numpy
+      $ heart_data['sex']=heart_data['sex'].apply(str)
+      - apply() mimics map() from functional programming; takes advantage of underlying C's speed which you don't get from writing a Python for-loop.
+
+  - SUPERVISED; UNSUPERVISED; REGRESSION; CLASSIFICATION; CLUSTERING
+
+
