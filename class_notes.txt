@@ -31,4 +31,10 @@ Sep 29:
 
   - SUPERVISED; UNSUPERVISED; REGRESSION; CLASSIFICATION; CLUSTERING
 
+  - How to config ipython notebook's load dir inside of the data-science-dst virtual box:
+    1. vagrant ssh
+    2. open up '~/.ipython/profile_dst/ipython_notebook_config.py'
+    3. c.FileNotebookManager.notebook_dir = u'/ga_fall_2014'
+       c.NotebookManager.notebook_dir = u'/ga_fall_2014'
+
 
