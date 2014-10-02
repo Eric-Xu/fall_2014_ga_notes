@@ -37,4 +37,22 @@ Sep 29:
     3. c.FileNotebookManager.notebook_dir = u'/ga_fall_2014'
        c.NotebookManager.notebook_dir = u'/ga_fall_2014'
 
+  - Question:
+    - data.Ozone.isnull().count() # => 153
+    - data.Ozone.isnull().sum() # => 37
+    - data.Ozone.count # => 116
 
+    - ipython's autocomplete
+
+Oct 1:
+  Linear regressions
+    - time series data is almost always non-independent, meaning one outcome influences the next
+    - ordinary least squares(OSL) method
+
+    - linear regression is like architecture
+
+  Kaggle competition: Africa Soil Property Prediction Challenge
+    - step 1 is spacial reduction; there are over 3000 columns!
+    - send to all instructors; email subject: dataexplor02
+
+  - HEDONIC
