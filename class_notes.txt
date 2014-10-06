@@ -42,17 +42,21 @@ Sep 29:
     - data.Ozone.isnull().sum() # => 37
     - data.Ozone.count # => 116
 
-    - ipython's autocomplete
-
 Oct 1:
   Linear regressions
     - time series data is almost always non-independent, meaning one outcome influences the next
     - ordinary least squares(OSL) method
-
-    - linear regression is like architecture
+    - http://dss.princeton.edu/online_help/analysis/interpreting_regression.htm
+    - http://www.datarobot.com/blog/multiple-regression-using-statsmodels/
 
   Kaggle competition: Africa Soil Property Prediction Challenge
     - step 1 is spacial reduction; there are over 3000 columns!
     - send to all instructors; email subject: dataexplor02
 
-  - HEDONIC
+  Python Stats Libraries:
+    - Pandas (PD) is mainly a package to handle and operate directly on data.
+    - Scikit-learn is doing machine learning with emphasis on predictive modeling with often large and sparse data
+    - Statsmodels (SM) is doing "traditional" statistics and econometrics, with much stronger emphasis on parameter estimation and (statistical) testing.
+
+  - HEDONIC, SUPPORT VECTOR MACHINES (SVM)
+
