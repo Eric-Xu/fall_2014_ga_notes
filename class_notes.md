@@ -64,7 +64,14 @@ How to use Pairwise and Partial Correlations to simplify a multivariate regressi
 
   - HEDONIC, SUPPORT VECTOR MACHINES (SVM)
 
+### Oct 6:
+  Data visualization
+    - Edward Tufte
+    - tools: wrappers on top of matplotlib include seaborn, vincent, and bokeh
+  Exploratory data analysis (EDA)
+    - Outbrain's jobs queue example:
+      - graph it; rescale; apply log transformations; filter on subset; pull in more data
+
 ### Oct 8:
   Agenda
     - have fun
-
