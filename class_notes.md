@@ -74,4 +74,46 @@ How to use Pairwise and Partial Correlations to simplify a multivariate regressi
 
 ### Oct 8:
   Agenda
-    - have fun
+    - cross validation
+    - model selection criteria
+
+  Data Exploration02 discussion
+    - Louisa did a Pearson correlation
+    - pH data in Jarret's file was modified
+    - skewness shows how far to the left and right
+    - kurtosis means how pointy is the data (?)
+    - Mark subsetted the data based on elevation; then reran the correlations on that subset and decided to run a regression based on Ref2, Infrared02, and BSAN
+
+  Model Selection
+    - mean squared error is one way to measure model accuracy
+    - but minimizing the MSE might lead to overfitting
+    - balance between MSE and degrees of freedom
+    - the following has 2 degrees of freedom:
+      `y = B0 + B1x + B2x2`
+    - StatsModel is newer; a Python port of R
+    - StatsModel summary:
+        F-stats bigger than 2 is good
+        R-squared close to 1 is good
+    - machine learning evolved out of CS dept; scikit-learn
+    - statistical learning evolved out of math dept; R; StatsModel
+
+  Multiple Linear Regression
+    - the ideal regression coef scenario is when the predictors are uncorrelated
+
+  Cross Validation
+    - K-fold is most common
+    - also a 'Leave one out'
+    - use cross validation when your dataset isn't large enough to be split into a test set
+
+  Rob's day to day model validation (depends on the type of data)
+    - F-statistic, AIC, its hard to say
+    - that's because most are time series data without many predictors
+
+  Jarret's approach
+    - first check P value and eliminate predictors
+    - then check AIC, Omnibus, Kurtosis
+
+  Data Exploration03
+    - raw Bloomberg data; clean it
+    - Question: How do you interpret a regression model? How does a change in inputs affect the output?
+    - LIBOR - OIS = good spread
