@@ -117,3 +117,21 @@ How to use Pairwise and Partial Correlations to simplify a multivariate regressi
     - raw Bloomberg data; clean it
     - Question: How do you interpret a regression model? How does a change in inputs affect the output?
     - LIBOR - OIS = good spread
+
+
+### Question for Rob
+```python
+# when to use cv and n_jobs?
+# http://scikit-learn.org/stable/modules/cross_validation.html
+model1 = LinearRegression(fit_intercept=True)
+cv_score     = cross_val_score(model1, df[['ELEV', 'REF2', 'BSAN']], df['pH'], cv=5).mean()
+n_jobs_score = cross_val_score(model1, df[['ELEV', 'REF2', 'BSAN']], df['pH'], n_jobs=5).mean()
+print cv_score, n_jobs_score # => -0.0694517866041 -0.0446749474373
+
+# which metric to look at?
+accuracy_score = cross_val_score(model1, df[['ELEV', 'REF2', 'BSAN']], df['pH'], n_jobs=5).mean()
+mse_score = cross_val_score(model, predictors, snd_data.pH, n_jobs=5, scoring="mean_squared_error").mean()
+
+# how to choose inputs for K-fold?
+kfold = KFold(len(snd_data), n_folds=10)
+```
