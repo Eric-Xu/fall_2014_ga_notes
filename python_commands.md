@@ -14,7 +14,23 @@ print str(99)
   ```python
   orig_data = pd.read_csv("africa_ph.csv")
   data = orig_data.copy()
+
+  pd.read_csv(filename, sep=" ", index_col=0)
   ```
+
+## Common data prep steps:
+```python
+df.dropna(inplace=True)
+
+df["League"] = pd.factorize(df["League"])[0]
+
+df.replace(to_replace='NN', value=-1, inplace=True)
+
+predictors = [col for col in df.columns if col != "Salary"]
+X = df[predictors].values
+y = df.Salary.values
+
+```
 
 ## Series transformations:
 ```python
@@ -40,6 +56,11 @@ def age_grouping(age):
     return np.nan
 
 df['age_group'] = df.Age.apply(lambda x: age_grouping(x))
+
+# fall_2014_lessons/06_dimensionality_reduction/lab/regularization2.ipynb
+test = pd.DataFrame({'x': [1, 1, 2, 2, 1, 3], 'y':[1, 2, 2, 2, 2, 1]})
+pd.factorize(test['x'])
+# => (array([0, 0, 1, 1, 0, 2]), Int64Index([1, 2, 3], dtype='int64')) 
 ```
 
 ## Create a new dataframe:
