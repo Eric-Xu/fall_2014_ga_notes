@@ -208,6 +208,8 @@ print("MSE: %0.2f (+/- %0.2f)" % (mse_score.mean(), mse_score.std() * 2))
 ```
 
 ## K-fold Cross Validation:
+"The Right Way to Cross Validate" - http://nbviewer.ipython.org/github/cs109/content/blob/master/lec_10_cross_val.ipynb
+
 ```python
 # fall_2014_assignments/dataexplor02/exu/kaggle_africa_mholt_exu.ipynb
 from sklearn.cross_validation import KFold
