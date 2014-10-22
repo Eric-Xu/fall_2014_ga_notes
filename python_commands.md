@@ -40,6 +40,8 @@ data.Title = data.Title.apply(lambda x: x.split(' (')[0])
 
 data.dropna()
 data.drop("OIS_date", axis=1, inplace=True)
+
+df.date = df.date.apply(pd.to_datetime)
 ```
 
 ## Create a new categorical column:

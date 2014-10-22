@@ -166,3 +166,6 @@ mse_score = cross_val_score(model, predictors, snd_data.pH, n_jobs=5, scoring="m
 # how to choose inputs for K-fold?
 kfold = KFold(len(snd_data), n_folds=10)
 ```
+
+# GridSearchCV # hyperparameter grid search to find best model parameters
+http://nbviewer.ipython.org/github/herrfz/dataanalysis/blob/master/assignment2/samsung_data_prediction_submitted.ipynb
