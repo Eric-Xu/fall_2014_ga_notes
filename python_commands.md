@@ -24,6 +24,8 @@ data.Title = data.Title.apply(lambda x: x.split(' (')[0])
 
 data.dropna()
 data.drop("OIS_date", axis=1, inplace=True)
+
+df['date'].apply(pd.to_datetime)
 ```
 
 ## Create a new categorical column:
@@ -158,7 +160,7 @@ model = LinearRegression(fit_intercept=True)
 model.fit(x, y)
 print ("Model coefficient: %.5f, and intercept: %.5f" % (model.coef_, model.intercept_))
 
-predicted_pH = model.predict(0.04079) 
+predicted_pH = model.predict(0.04079)
 # or calculate predicted_pH manually
 # predicted_pH = model.coef_(0.04079) + model.intercept_
 ```
@@ -200,10 +202,10 @@ mses = []
 
 for train, test in kfold:
     Xtrain, ytrain, Xtest, ytest = inf02_z_scores[train], ph_z_scores[train], inf02_z_scores[test], ph_z_scores[test]
-    
+
     model = LinearRegression(fit_intercept=True)
     model.fit(inf02_z_scores, ph_z_scores)
-    
+
     ypred = model.predict(Xtest)
     mses.append(mean_squared_error(ypred, ytest))
     # mses.append(model.score(ypred, ytest))

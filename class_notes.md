@@ -150,6 +150,44 @@ How to use Pairwise and Partial Correlations to simplify a multivariate regressi
   Data Explor03
     - df.merge (ask Jarret about how the cleaned data should look like)
 
+
+### Oct 20:
+  Agenda
+    - logit regression
+    -  intro to grid search
+
+  Data Explor04 walkthrough
+    - looking at mean and standard deviation; here all of the std's are the same, indicating that the data has been normalized
+    - y here has not been transformed
+    - definitely do a histogram of the dependant variable
+    - pd.scatter_matrix; use this when there are less than 10 predictors; otherwise it will choke up the kernel
+
+    1. df.describe
+    2. plot histogram for each var
+    3. df.head
+    4. df.scatter_matrix
+    5. df.corr
+    6. model with all predictors as baseline
+    7. use cross validation to select subset (SelectKBest is blackbest; python's itertools is more transparent)
+    8. compare baseline with lasso and ridge w/subset or all predictors
+    9. develop higher order polynomial model
+
+  Classification
+    - classification you know the groups in advance (supervised)
+    - clustering is unsupervised
+    - confusion matrix
+    - accuracy is fraction of instances predicted correctly
+    - precision is fraction of POSITIVES that are indeed POSITIVES
+    - recall
+    - fall-out is the false positive rate
+
+  Logistic Regression
+    - modeling for classification data
+    - can linear regression also be used for classification? Yes, if outcomes fall within (?)
+    - linear regression fails because it can produce results where probability is greater than 1 (100%) or less than 0 (0%)
+    - linreg also fails because categories are arbitrarily assigned so doesn't have to be
+
+
 ### Question for Rob
 ```python
 # when to use cv and n_jobs?
@@ -166,3 +204,7 @@ mse_score = cross_val_score(model, predictors, snd_data.pH, n_jobs=5, scoring="m
 # how to choose inputs for K-fold?
 kfold = KFold(len(snd_data), n_folds=10)
 ```
+
+1. what's your project?
+2. where's the data coming from?
+3. objectives: what you're trying to learn and predict?
