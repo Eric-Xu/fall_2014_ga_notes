@@ -119,6 +119,37 @@ How to use Pairwise and Partial Correlations to simplify a multivariate regressi
     - LIBOR - OIS = good spread
 
 
+### Oct 15:
+  Agenda
+    - recap subset selection
+    - regularization
+    - dimension reduction
+
+  Regularization
+    - RSS is residual sum of squares; try to minimize this
+    - lasso & ridge regressions (Rob almost never uses in day job; but good to know)
+
+  Multicollinearity
+    - high correlations in data; therefore model suffers from multicollinearity
+    - PCA can be used to solve this; it is not a model; it is a preprocessing step for variables to be used in a model
+
+  L1/Lasso & L2/Ridge
+    - overfitting; robustness
+
+  Heteroscedasticity
+
+  Using PCA to Summarize High Dimensional Data
+    - a way to summarize covariance in data
+
+  Partition Training/Testing Datasets
+    - typically 80/20
+
+  K-fold
+    - root of mse, absolute mse, explained
+
+  Data Explor03
+    - df.merge (ask Jarret about how the cleaned data should look like)
+
 ### Question for Rob
 ```python
 # when to use cv and n_jobs?
