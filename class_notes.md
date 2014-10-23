@@ -188,6 +188,32 @@ How to use Pairwise and Partial Correlations to simplify a multivariate regressi
     - linreg also fails because categories are arbitrarily assigned so doesn't have to be
 
 
+### Oct 22:
+  Agenda
+    - probability theory
+    - bayes theorem
+    - naive bayes classifier
+
+  Jarret's iterative search algorithm
+    - iteratively select best features; so now instead of having 2^n combinations, it now becomes 2*n combinations
+    - also called 'forward step-wise'
+
+  Probability
+    - between 0 and 1
+    - joint probability P(AB)
+    - conditional probability P(A|B)
+
+  Bayes Theorem
+    - frequentist vs bayesian
+
+  Naive Bayes
+    - given an article, assume that 'ebola' and 'virus' are conditionally non-independent
+
+  Data Explor05 - sentiment analysis of tweets
+    - "@DataDAVE thanks for the awesome twitter dataset!!"
+    - "I just don't understand lasso!??!"
+
+
 ### Question for Rob
 ```python
 # when to use cv and n_jobs?
@@ -208,3 +234,10 @@ kfold = KFold(len(snd_data), n_folds=10)
 1. what's your project?
 2. where's the data coming from?
 3. objectives: what you're trying to learn and predict?
+
+# GridSearchCV # hyperparameter grid search to find best model parameters
+http://nbviewer.ipython.org/github/herrfz/dataanalysis/blob/master/assignment2/samsung_data_prediction_submitted.ipynb
+
+evan will thomas
+
+Sunday office hour 3:00-4:45pm
