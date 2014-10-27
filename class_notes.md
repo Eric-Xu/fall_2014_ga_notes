@@ -213,6 +213,30 @@ How to use Pairwise and Partial Correlations to simplify a multivariate regressi
     - "@DataDAVE thanks for the awesome twitter dataset!!"
     - "I just don't understand lasso!??!"
 
+  Bernoulli Distribution
+    - Each trial has two possible outcomes, in the language of reliability called success and failure.
+    - The trials are independent. Intuitively, the outcome of one trial has no influence over the outcome of another trial.
+    - On each trial, the probability of success is p and the probability of failure is 1−p
+
+  Binomial Distribution
+    - Binomial distribution is a sum of independent and evenly distributed Bernoulli trials.
+    - Each trial has two possible outcomes, in the language of reliability called success and failure.
+    - The trials are independent
+    - x is a discrete number representing the number of successes in n trials
+    - specific order of win-lose trial outcomes does not matter; just the number of times it happened
+
+  Multinomial Distribution
+    - a generalization of the binomial distribution
+    - Each trial has more than two possible outcomes
+    - the outcomes are mutually exclusive and exhaustive (at least one will occur)
+    - the probability of each outcome added together sums to 1
+    - the probabilities are also constant between trials
+    - "In a random sample of 10 Americans, what is the probability 6 have blood type O, 2 have type A, 1 has type B, and 1 has type AB?"
+    - "An urn containing 8 red balls, 3 yellow balls, and 9 white balls. 6 balls are randomly selected WITH replacement."
+    - https://www.youtube.com/user/jbstatistics/videos
+
+  Multivariate Hypergeometric Distribution
+    - "An urn containing 8 red balls, 3 yellow balls, and 9 white balls. 6 balls are randomly selected WITHOUT replacement."
 
 ### Question for Rob
 ```python
@@ -230,14 +254,7 @@ mse_score = cross_val_score(model, predictors, snd_data.pH, n_jobs=5, scoring="m
 # how to choose inputs for K-fold?
 kfold = KFold(len(snd_data), n_folds=10)
 ```
-
-1. what's your project?
-2. where's the data coming from?
-3. objectives: what you're trying to learn and predict?
-
 # GridSearchCV # hyperparameter grid search to find best model parameters
 http://nbviewer.ipython.org/github/herrfz/dataanalysis/blob/master/assignment2/samsung_data_prediction_submitted.ipynb
 
 evan will thomas
-
-Sunday office hour 3:00-4:45pm
