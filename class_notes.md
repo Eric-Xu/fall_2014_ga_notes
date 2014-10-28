@@ -238,6 +238,14 @@ How to use Pairwise and Partial Correlations to simplify a multivariate regressi
   Multivariate Hypergeometric Distribution
     - "An urn containing 8 red balls, 3 yellow balls, and 9 white balls. 6 balls are randomly selected WITHOUT replacement."
 
+
+### Oct 27:
+  AUC
+    - a good way to measure the accuracy of your classifier
+  Confusion Matrix
+    -
+
+
 ### Question for Rob
 ```python
 # when to use cv and n_jobs?
@@ -257,4 +265,4 @@ kfold = KFold(len(snd_data), n_folds=10)
 # GridSearchCV # hyperparameter grid search to find best model parameters
 http://nbviewer.ipython.org/github/herrfz/dataanalysis/blob/master/assignment2/samsung_data_prediction_submitted.ipynb
 
-evan will thomas
+evan will thomas granger liz
