@@ -245,6 +245,34 @@ How to use Pairwise and Partial Correlations to simplify a multivariate regressi
   Confusion Matrix
     -
 
+### Oct 29:
+  term project presentations
+  Data Explor06
+    - one row per concert (?)
+    - naive bayes
+    - kfolds doesn't do a good job randomizing the training and test data for time series data; it systematically picks rows in consecutive blocks; therefore we want to randomize the df
+    - Goal: predict what year a concert happened based on the set list
+
+### Nov 3:
+  Time series
+    - cannot use cross validation for time series data because data is dependent
+    - can only apply time series analysis on stationary data (mean of dataset is zero)
+    - for non-stationary data we first need to do a transformation
+    - brownian motion
+      - high auto correlation
+      - mean can be at any level
+    - white noise is just random data
+      - low auto correlation
+      - mean is zero
+    - brownian motion and white noise are at two extremes of how time series data could look like. jarret is using these as ways to demonstrate how to use correlations to pick the number of covariates
+
+  Cross validating time series
+    - kfolds does not work for time series because we need our training and test data to be in random consecutive batches
+    - instead
+      - we do this manually in 11_timeseries/cross_validating_time_dependent_models
+      - randomly select a batch of consecutive data
+      - try to predict the next batch
+
 
 ### Question for Rob
 ```python

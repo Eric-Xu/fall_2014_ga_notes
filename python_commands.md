@@ -1,12 +1,20 @@
 # General Python
 
-##Type casting
+## Type casting
 ```python
 print float("99")
 print int(2.5)
 print str(99)
 ```
 
+## Try/Catch
+```python
+try:
+  # code
+except ValueError as err:
+  print(err)
+  continue # This tells the computer to move on to the next item after it encounters an error
+```
 
 # Pandas
 
