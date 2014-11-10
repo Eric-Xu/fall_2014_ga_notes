@@ -9,3 +9,7 @@ https://www.coursera.org/course/datasci
 ### Machine Learning for Hackers
 http://nbviewer.ipython.org/github/carljv/Will_it_Python/tree/master/MLFH/
 
+### Pandas
+https://bitbucket.org/hrojas/learn-pandas
+https://github.com/ResearchComputing/Meetup-Fall-2013/tree/master/python
+

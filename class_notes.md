@@ -273,6 +273,17 @@ How to use Pairwise and Partial Correlations to simplify a multivariate regressi
       - randomly select a batch of consecutive data
       - try to predict the next batch
 
+### Nov 5:
+  Guest speaker
+    - Carmelo
+
+  Kaggle Africa soil winner
+    - step 1: preprocessing
+      - standard deviation
+      - log transform
+    - step 2: models
+    - step 3: metrics
+
 
 ### Question for Rob
 ```python

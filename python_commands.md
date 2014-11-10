@@ -37,7 +37,6 @@ df.replace(to_replace='NN', value=-1, inplace=True)
 predictors = [col for col in df.columns if col != "Salary"]
 X = df[predictors].values
 y = df.Salary.values
-
 ```
 
 ## Series transformations:
@@ -46,10 +45,11 @@ heart_data['sex']=heart_data['sex'].apply(str)
 
 data.Title = data.Title.apply(lambda x: x.split(' (')[0])
 
-data.dropna()
-data.drop("OIS_date", axis=1, inplace=True)
-
-df.date = df.date.apply(pd.to_datetime)
+new_df = df[['US10Y_yield','US10Y_date']]
+new_df = new_df.dropna()
+new_df.date = new_df.date.apply(pd.to_datetime)
+new_df.set_index('date', inplace=True)
+new_df = new_df.drop('US10Y_date', axis=1)
 ```
 
 ## Create a new categorical column:
