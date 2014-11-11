@@ -284,6 +284,22 @@ How to use Pairwise and Partial Correlations to simplify a multivariate regressi
     - step 2: models
     - step 3: metrics
 
+### Nov 10:
+  Clustering
+    - hard clustering do not overlap
+    - soft clustering can overlap;
+    - can be used as a preprocessing step before applying categorization analysis
+
+  K-means
+    - what's the best way to choose k?
+    - k centroids; reached optimal solution when centroids stop moving
+    - jaccard coefficient is a popular metric for text mining problems
+    - fast so good for large datasets
+    - disadvantages: local minima problem; how many k's?
+
+  Elbow method to picking k
+    - inertia on the y-axis
+
 
 ### Question for Rob
 ```python
