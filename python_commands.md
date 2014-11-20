@@ -11,7 +11,7 @@ print str(99)
 ```python
 try:
   # code
-except ValueError as err:
+except Exception as err:
   print(err)
   continue # This tells the computer to move on to the next item after it encounters an error
 ```

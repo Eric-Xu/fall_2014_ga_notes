@@ -300,6 +300,69 @@ How to use Pairwise and Partial Correlations to simplify a multivariate regressi
   Elbow method to picking k
     - inertia on the y-axis
 
+### Nov 12:
+  Sushan
+    - bayesian analysis
+    - python nltk tagging; nltk's key word extraction
+    - nonstandard distance formula
+      - normalized google distance) to compare keyword list
+      - cosine similarity for document similarities; nltk.cluster.kmeans
+    - analyize the body as well?
+    - nytimes tags api
+
+  Recommendation Systems
+    - Rob works on article recommendation
+    - linear algebra problem; not clustering
+    - Content based filtering
+      - map users to feature space
+      - disadvantage is must map each item into a feature space; interns or Mechanical Turk
+      - hard to create cross content recommendations; Pandora cannot recommend movies
+    - Collaborative filtering
+      - when two people share interests; they will like similar things
+      - how users will rate items they have not used
+      - does not scale well; item-item similarity matrix
+      - currently the buzz word for recommendation systems; if interviewing for a job that builds rec systems, be prepared to talk about adv/disadv of CF
+
+
+### Nov 12:
+  NLP
+    - Peter Norvig coursera AI
+    - corpus is a structured set of texts; the Brown Corpus
+    - filtering stop words:
+      - remove the most frequent words; Tipf's law
+      - remove anything with 3 letters or less
+      - define a list of stop words
+    - TF-IDF is larger for words that occur more in a single document but less in all docs
+    - cosine similarity is most common measure for doc similarity
+    - cosine similarity of 90 deg means two articles are orthogonal
+
+
+### Nov 19:
+  A|B testing
+    - Bayes Theorem
+      - P(B|A) likelihood
+      - P(A) prior
+      - P(B) normalization constant
+      - P(A|B) posterior
+    - Headline testing from Rob's work
+      - frequentist probability measures a proportion of outcomes
+      - bayesian measures degree of belief; ctr is within a certain range
+      - frequentist approach flaws:
+        - need define number of page views (ie 20,000) to test p-value;
+        - different sites will hit those numbers at different rates
+        - some will hit 20,000 in 2 secs; others will take 2 days
+      - Bayesian approach
+        - Anscombe boundary; stop a test as soon as a conclusion has been reached
+        - beta distribution is good for binary outcomes
+          - probability of probabilities
+          - model baseball batting average; hits vs misses
+    - additional reading
+      - multi arm bandit
+
+  Data Explor09
+    - email: jarret.petrillo@gmail.com
+    - subject: [Dataexplor01]
+
 
 ### Question for Rob
 ```python
