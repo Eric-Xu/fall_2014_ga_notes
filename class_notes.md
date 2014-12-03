@@ -364,6 +364,38 @@ How to use Pairwise and Partial Correlations to simplify a multivariate regressi
     - subject: [Dataexplor01]
 
 
+### Nov 24:
+  Decision Trees
+    - ID3 is a greedy search algorithm
+    - greedy algorithms uses the most optimal decision at that point in time;
+    - weakness is that the optimal point might come later; found the local optimum, not the global optimum; prone to over-fitting
+    - advantages: features do not need to be scaled or mean-centered
+    - never used in the real world. people prefer random forests and ensemble methods
+
+  Random Forest
+    - solves the greediness of decision trees; avoids finding the local optimum
+
+  Emsemble Learning
+    - bagging vs boosting
+
+
+### Dec 1:
+  HDFS
+    - Hadoop won't be around in 5 years
+    - news technology built on top of Hadoop like Spark
+
+  Parquet columnar data structure
+    - column oriented makes it easier to select only relevant columns; group values within columns
+
+  Geospatial
+    - Blake Shaw of Foursquare "Data Driven NYC 20" video
+    - Foursquare problem is a combination of NLP, recommendation system, geospatial
+
+  Prep work for weds: (bring personal laptop)
+    - http://hortonworks.com/products/hortonworks-sandbox/#install
+
+
+
 ### Question for Rob
 ```python
 # when to use cv and n_jobs?
