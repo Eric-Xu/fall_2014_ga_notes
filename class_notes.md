@@ -382,7 +382,7 @@ How to use Pairwise and Partial Correlations to simplify a multivariate regressi
 ### Dec 1:
   HDFS
     - Hadoop won't be around in 5 years
-    - news technology built on top of Hadoop like Spark
+    - new technology built on top of Hadoop like Apache Spark
 
   Parquet columnar data structure
     - column oriented makes it easier to select only relevant columns; group values within columns
@@ -395,6 +395,34 @@ How to use Pairwise and Partial Correlations to simplify a multivariate regressi
     - http://hortonworks.com/products/hortonworks-sandbox/#install
 
 
+### Dec 3:
+  Big Data
+    - volume, velocity, variety
+    - moving code to the data
+
+  Map Reduce (framework)
+    - the term "MapReduce" comes from functional programming
+    - Hadoop is an open-source java implementation of the map-reduce framework
+
+  Storm (Varun Vijayaraghavan)
+    - real time stream processing framework
+    - continuous data can come at a high velocity (sensory data 100,000 points/sec)
+    1. data source passes into backend server (data ingestion)
+    2. splits data into data streams for analysis
+
+  Apache Spark
+    - batch based data parallel system; general purpose cluster computing system
+
+  Hortonworks Sandbox
+    - localhost:8888
+    - localhost:8000
+    - Query Editor:
+      > show table;
+      > describe sample_07;
+      > select * from sample_07 limit 5;
+      > select count(*) from sample_07;
+      > select * from sample_07 join sample_08 on sample_07.code = sample_08.code;
+    - Rob: learn Hive and Pig
 
 ### Question for Rob
 ```python
